@@ -1,0 +1,1 @@
+<p>&copy;20XX Copyright notice here. Developed by Daryl Crosbie.</p>

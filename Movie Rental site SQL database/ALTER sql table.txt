@@ -1,0 +1,4 @@
+ALTER TABLE `Movie` ADD `Frequency` INT;
+
+UPDATE movie SET frequency = 1;
+
