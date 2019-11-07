@@ -1,0 +1,45 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search...."
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
+        <div class="input-group-append">
+          <span
+            class="input-group-text"
+            id="basic-addon2"
+            (click)="success('Searching.....')"
+            >Go</span
+          >
+        </div>
+      </div>
+    </form>
+    <alert></alert>
+    <div class="navbar navbar-right">
+      <div class="dropdown" *ngFor="let menu of menuItems; let i = index">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="true"
+        >
+          {{ menu.menuTitle }}
+        </a>
+
+        <div class="dropdown-menu">
+          <div *ngFor="let item of menuItems[i].items">
+            <a href="#" class="dropdown-item">
+              {{ item }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
