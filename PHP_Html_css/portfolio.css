@@ -1,0 +1,114 @@
+
+body{	background-image: url("img/bodyBack.jpg");
+}
+#homeImg{
+	position: absolute;
+	left: 290px;
+	width: 755px;
+	height:480px;
+	border: 10px groove;
+	border-radius: 10px;
+}
+#contactImg{
+	position: absolute;
+	left: 290px;
+	width: 755px;
+	height:480px;
+	border: 10px groove;
+	border-radius: 10px;
+}
+h1{	
+	height: 100px;
+	background-image: url("img/sand.jpg");
+	border-radius: 20px;
+	color: black;
+	text-align: center;
+}
+nav{
+	width: 260px;
+	height: 500px;
+	background-image: url("img/sand.jpg");
+	border-radius: 10px;
+	position: absolute;
+	
+}
+#navRight{
+	left: 1090px;
+}
+.navBtn{
+	margin: 10px 10px 10px 10px;
+	background-color: #f4fc9c;
+	width: 220px;
+	height: 90px;
+	font-size: 24px;
+	font-family:Impact, Charcoal, sans-serif;
+	border-style:groove;
+	border-width:10px;
+	border-color:#ffffff;
+	border-radius:10px;
+}
+article{
+	position: absolute;
+	left: 290px;
+	width: 755px;
+	height:480px;
+	border: 10px groove;
+	border-radius: 10px;
+	text-align:center;
+	color: black;
+	font-size: 22px;
+	background-color: #e0eaf9;
+}
+#info{
+	color: green;
+	font-size: 28px;
+}
+.answer{
+	margin: 30px 30px 30px 30px;
+}
+#addTitle{
+	font-size: 36px;
+}
+#memTitle{
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 42px;
+	
+}	
+.question{
+	color: blue;
+	margin: 30px 30px 20px 30px;
+}
+button{
+	margin: 40px 30px 30px 30px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+	font-size: 40px;
+	border-radius: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	border-radius:5px;
+}
+.bHover:hover{
+	background-color: #f4fc9c;
+}
+div#list{
+	background-color: white;
+	position: relative;
+	margin-left:70px;
+	margin-right:70px;
+	text-align: left;
+	overflow:hidden; 
+	overflow-y:scroll;
+	height:300px; 
+	width:600;
+	border-radius: 5px;
+}
+#memberInfo{
+	background-color:white;
+	margin: 50px 50px 50px 50px;
+	border-radius:10px;
+}
+
+
