@@ -1,0 +1,42 @@
+	<label for="Fname">Enter your name : </label>
+<input
+  type="text"
+  name="Fname"
+  placeholder="Enter here"
+  [(ngModel)]="YourName"
+/>
+<p>{{ YourName }}</p>
+<button (click)="resetHandler()" [disabled]="textChanged()">Reset</button>
+
+<h1 [ngStyle]="{ color: getColor() }">This is ngIf</h1>
+<h2 [ngClass]="{ white: flag }">This is ng class</h2>
+<p *ngIf="flag; else elseblock">The flag is true.</p>
+<ng-template #elseblock>
+  <p>The flag is false.</p>
+</ng-template>
+<button (click)="setFlag()">Set Flag</button>
+
+<h2>This is ngFor</h2>
+<input type="text" placeholder="Enter here" [(ngModel)]="YourName" />
+<button (click)="add()">Add to List</button>
+<p *ngFor="let names of nameList">{{ names }}</p>
+
+<h2>This will toggle the paragraph below</h2>
+<button (click)="next()">Para {{ count }}</button>
+
+<p *ngIf="count === 0; else elsy">
+  {{ paraList[0] }}
+</p>
+<ng-template #elsy
+  ><p [ngClass]="{ para: checkCount() }">
+    {{ paraList[count] }}
+  </p></ng-template
+>
+<h2>This data comes from an http request method</h2>
+<p>{{ errorMsg }}</p>
+<p *ngFor="let p of people">{{ p.id + " : " + p.name }}</p>
+<nav>
+  <a routerLink="/departments" routerLinkActive="active">Departments</a>
+  <a routerLink="/employees" routerLinkActive="active">Employees</a>
+</nav>
+<router-outlet></router-outlet>

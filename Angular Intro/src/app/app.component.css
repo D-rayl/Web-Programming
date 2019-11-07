@@ -1,0 +1,10 @@
+.white {
+  border: 1px solid red;
+  background-color: rgb(8, 4, 4);
+  color: white;
+}
+.para {
+  border: 1px solid red;
+  background-color: rgb(8, 4, 4);
+  color: white;
+}
