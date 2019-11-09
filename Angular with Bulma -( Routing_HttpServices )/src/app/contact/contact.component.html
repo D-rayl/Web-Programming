@@ -1,0 +1,75 @@
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Contact Us!</h1>
+    </div>
+  </div>
+</section>
+<div class="columns">
+  <div class="column">
+    <section class="section">
+      <div class="container">
+        <form (ngSubmit)="processForm()">
+          <div class="field">
+            <input
+              type="text"
+              name="name"
+              class="input"
+              placeholder="Your name"
+              [(ngModel)]="name"
+              required
+              minlength="3"
+              #nameInput="ngModel"
+            />
+            <div
+              class="help is-error"
+              *ngIf="nameInput.invalid && nameInput.dirty"
+            >
+              Must enter a name
+            </div>
+          </div>
+          <div class="field">
+            <input
+              type="email"
+              name="email"
+              class="input"
+              placeholder="Your Email"
+              [(ngModel)]="email"
+              required
+              email
+              #emailInput="ngModel"
+            />
+
+            <div
+              class="help is-error"
+              *ngIf="emailInput.invalid && emailInput.dirty"
+            >
+              Needs to be a valid email.
+            </div>
+          </div>
+          <div class="field">
+            <textarea
+              class="textarea"
+              name="message"
+              placeholder="Type here"
+              [(ngModel)]="message"
+              required
+              #messageInput="ngModel"
+            ></textarea>
+
+            <div
+              class="help is-error"
+              *ngIf="messageInput.invalid && messageInput.dirty"
+            >
+              Enter some text
+            </div>
+          </div>
+          <button type="submit" class="button is-danger is-large">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="column"></div>
+</div>
