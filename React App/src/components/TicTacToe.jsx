@@ -1,0 +1,51 @@
+import React, { Component } from "react";
+import Board from "./Board";
+
+class TicTacToe extends Component {
+  handleGo(i) {
+    const squares = [...this.props.squares];
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    this.props.handleTurn(i);
+  }
+  render() {
+    const winner = calculateWinner(this.props.squares);
+    let status;
+    if (winner) {
+      status = winner + " is the winner";
+    } else {
+      status = "Next up is " + (this.props.next ? "X" : "O");
+    }
+    return (
+      <Board
+        isTicTac={this.props.isTicTac}
+        sentStatus={status}
+        squares={this.props.squares}
+        handleGo={i => this.handleGo(i)}
+      />
+    );
+  }
+}
+
+function calculateWinner(squares) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }
+  return false;
+}
+
+export default TicTacToe;

@@ -1,0 +1,87 @@
+* {
+  background-color: cornsilk;
+}
+.Square {
+  background-color: bisque;
+  border: black solid 1px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 36px;
+  width: 7em;
+  height: 5em;
+  margin: -2px;
+  vertical-align: top;
+}
+.Images {
+  font-size: 36px;
+  border: black solid 1px;
+  width: 7em;
+  height: 5em;
+  vertical-align: top;
+  overflow: hidden;
+}
+.Table {
+  margin: 1px;
+}
+.Row {
+}
+.Game {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Section {
+  display: flex;
+}
+.sideContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.NavBar {
+  display: flex;
+  justify-content: center;
+  background-color: coral;
+  align-items: center;
+  min-height: 100px;
+}
+.NavStyle {
+  width: 900px;
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.Title {
+  background-color: coral;
+  font-size: 36px;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.Container {
+  display: flex;
+  justify-content: center;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+}
+.Status {
+  display: flex;
+  justify-content: center;
+}
+.GameBtn {
+  border: none;
+  background-color: black;
+  width: 5em;
+  color: wheat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  border-radius: 10px;
+}
+.GameTitle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+}
